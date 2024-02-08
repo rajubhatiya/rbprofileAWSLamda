@@ -13,7 +13,12 @@ public class UserController {
 
     @GetMapping(value = "users", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<User> getUser() {
-        return List.of(new User("John", "Doe", "john.doe@baeldung.com"), 
+        return List.of(new User("John", "Doe", "john.doe@baeldung.com"),
                        new User("John", "Doe", "john.doe-2@baeldung.com"));
+    }
+
+    @GetMapping(value = "hello")
+    public String sayHello() {
+        return "Hello Rajesh";
     }
 }

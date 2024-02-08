@@ -21,7 +21,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: .
-      Handler: com.rbhatiya.springbootAWSLamda.ServiceHandler::handleRequest
+      Handler: com.rbhatiya.springbootAWSLamda.MyLambdaHandler::handleRequest
       Runtime: java17
       AutoPublishAlias: production
       SnapStart:
